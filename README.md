@@ -6,6 +6,7 @@
 - 可以用docker compose启动web服务以及它所依赖的mysql服务
 
 ###useage
+- export STAGE=dev 设置环境
 - dev环境下用 `gradle fC fM` 初始化数据库
 - 修改代码后，
 
