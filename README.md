@@ -1,7 +1,8 @@
 ##api微服务template
 
 ###description
-- 用spring-boot + mysql实现的rest api web服务
+- 用spring-boot + mysql + jersey 实现的rest api web服务
+- controller层由jersey实现，相应配置在JerseyConfig类中
 - 将服务docker化，build成相应image(DockerFile)
 - 可以用docker compose启动web服务以及它所依赖的mysql服务
 
