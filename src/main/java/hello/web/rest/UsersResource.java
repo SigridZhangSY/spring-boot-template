@@ -1,4 +1,4 @@
-package hello.rest;
+package hello.web.rest;
 
 import hello.domain.User;
 import hello.domain.UserRepository;

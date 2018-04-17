@@ -1,9 +1,6 @@
 package hello;
 
-import hello.rest.UsersResource;
 import org.glassfish.jersey.server.ResourceConfig;
-import org.glassfish.jersey.server.spring.scope.RequestContextFilter;
-import org.springframework.context.annotation.Configuration;
 import org.springframework.stereotype.Component;
 
 //Component让spring boot扫描到JerseyConfig
@@ -13,7 +10,7 @@ public class JerseyConfig  extends ResourceConfig {
 
         //        register(UsersResource.class);
 //        配置扫描的restful package.
-        packages("hello.rest");
+        packages("hello.web.rest");
 
     }
 }
