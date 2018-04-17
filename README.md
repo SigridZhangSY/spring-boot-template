@@ -2,9 +2,10 @@
 
 ###description
 - 用spring-boot + mysql + jersey 实现的rest api web服务
-- controller层由jersey实现，相应配置在JerseyConfig类中
+- controller层由jersey实现，相应配置在JerseyConfig类中 (如果要用spring boot实现controller层，将JerseyConfig注释)
 - 将服务docker化，build成相应image(DockerFile)
 - 可以用docker compose启动web服务以及它所依赖的mysql服务
+- 作为eureka client注册到服务发现列表上（eureka server地址为http://localhost:8761/eureka）
 
 ###useage
 - export STAGE=dev 设置环境
